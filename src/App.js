@@ -1,14 +1,13 @@
 import Card from "./components/Card";
+import Counter from "./components/Counter";
 import Greeting from "./components/Greeting";
 
 function App() {
-  // for (let i = 0; i > 5; i++) {
-  //   <Card />;
-  // }
   return (
-    <div className="wrap">
+    <div className="card-wrap">
       hello world
       <Greeting />;
+      <Counter />;
       <Card />;
       <Card />;
     </div>

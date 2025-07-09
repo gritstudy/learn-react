@@ -8,3 +8,10 @@ body {
 img {
   width: 100px;
 }
+.card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.text-red {
+  color: red;
+}
