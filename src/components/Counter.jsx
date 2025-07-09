@@ -7,7 +7,11 @@ const Counter = () => {
   const [cntState, setCntState] = useState(0);
   const handleIncrease = () => {
     setCntState(cntState + 1);
-    console.log("+1", cnt);
+  };
+
+  const [cntDerease, setCntDecrease] = useState(0);
+  const handleDecrease = () => {
+    setCntDecrease(cntDerease - 1);
   };
 
   //view
@@ -20,7 +24,10 @@ const Counter = () => {
         <button type="button" onClick={handleIncrease}>
           1
         </button>
-        <button type="button">-1</button>
+        <div> {cntDerease}</div>
+        <button type="button" onClick={handleDecrease}>
+          -1
+        </button>
       </div>
     </div>
   );
