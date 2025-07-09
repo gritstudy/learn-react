@@ -1,16 +1,23 @@
-import Card from "./components/Card";
-import Counter from "./components/Counter";
-import Greeting from "./components/Greeting";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
+  //logic
+
+  // Home, About, contact
+  // 1개의 라우트가 1개의 페이지
+  // 라우트의 기능은.... url/about 이렇게 페이지 이동하게된다.
+  // view
   return (
-    <div className="card-wrap">
-      hello world
-      <Greeting />;
-      <Counter />;
-      <Card />;
-      <Card />;
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
