@@ -1,0 +1,10 @@
+body {
+  border: dotted 2px yellow;
+}
+
+.card {
+  width: 300px;
+}
+img {
+  width: 100px;
+}
